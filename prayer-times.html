@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أوقات الصلاة</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>أوقات الصلاة</h1>
+            <button id="toggle-dark-mode" class="btn">الوضع الليلي</button>
+        </header>
+        
+        <nav class="menu">
+            <a href="index.html" class="menu-item">الرئيسية</a>
+            <a href="wird.html" class="menu-item">حساب الورد</a>
+            <a href="adhkar.html" class="menu-item">الأذكار</a>
+        </nav>
+        
+        <main>
+            <section class="card" id="prayer-times">
+                <h2>أوقات الصلاة</h2>
+                <div class="form-group">
+                    <label for="country">الدولة:</label>
+                    <select id="country">
+                        <option value="SA">السعودية</option>
+                        <option value="EG">مصر</option>
+                        <option value="AE">الإمارات</option>
+                        <option value="MA">المغرب</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="city">المدينة:</label>
+                    <select id="city"></select>
+                </div>
+                <button id="get-prayer-times-btn" class="btn primary-btn">عرض أوقات الصلاة</button>
+                <div id="prayer-times-display" class="hidden">
+                    <div class="prayer-time">
+                        <span class="prayer-name">الفجر:</span>
+                        <span id="fajr-time" class="time"></span>
+                    </div>
+                    <div class="prayer-time">
+                        <span class="prayer-name">الظهر:</span>
+                        <span id="dhuhr-time" class="time"></span>
+                    </div>
+                    <div class="prayer-time">
+                        <span class="prayer-name">العصر:</span>
+                        <span id="asr-time" class="time"></span>
+                    </div>
+                    <div class="prayer-time">
+                        <span class="prayer-name">المغرب:</span>
+                        <span id="maghrib-time" class="time"></span>
+                    </div>
+                    <div class="prayer-time">
+                        <span class="prayer-name">العشاء:</span>
+                        <span id="isha-time" class="time"></span>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 مخطط قراءة القرآن الكريم</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

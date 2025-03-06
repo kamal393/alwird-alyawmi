@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قراءة القرآن الكريم</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>قراءة القرآن الكريم</h1>
+            <button id="toggle-dark-mode" class="btn">الوضع الليلي</button>
+        </header>
+        
+        <nav class="menu">
+            <a href="index.html" class="menu-item">الرئيسية</a>
+            <a href="wird.html" class="menu-item">حساب الورد</a>
+            <a href="prayer-times.html" class="menu-item">أوقات الصلاة</a>
+            <a href="adhkar.html" class="menu-item">الأذكار</a>
+        </nav>
+        
+        <main>
+            <section class="card" id="quran-reader">
+                <h2>قراءة القرآن</h2>
+                <div class="form-group">
+                    <label for="reading-mode">اختر طريقة القراءة:</label>
+                    <select id="reading-mode">
+                        <option value="surah" selected>حسب السورة</option>
+                        <option value="hizb">حسب الحزب</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="surah-select">
+                    <label for="surah-number">اختر السورة:</label>
+                    <select id="surah-number"></select>
+                </div>
+                
+                <div class="form-group hidden" id="hizb-select">
+                    <label for="hizb-number">اختر الحزب:</label>
+                    <select id="hizb-number"></select>
+                </div>
+                
+                <button id="load-quran-btn" class="btn primary-btn">تحميل النص</button>
+                
+                <div id="quran-text" class="quran-text hidden"></div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 مخطط قراءة القرآن الكريم</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

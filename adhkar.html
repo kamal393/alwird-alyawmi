@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأذكار</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="apple-touch-icon" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>الأذكار</h1>
+            <button id="toggle-dark-mode" class="btn">الوضع الليلي</button>
+        </header>
+        
+        <nav class="menu">
+            <a href="index.html" class="menu-item">الرئيسية</a>
+            <a href="wird.html" class="menu-item">حساب الورد</a>
+            <a href="prayer-times.html" class="menu-item">أوقات الصلاة</a>
+        </nav>
+        
+        <main>
+            <section class="card" id="adhkar-section">
+                <h2>الأذكار</h2>
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="morning">أذكار الصباح</button>
+                    <button class="tab-btn" data-tab="evening">أذكار المساء</button>
+                    <button class="tab-btn" data-tab="prayer">أذكار بعد الصلاة</button>
+                </div>
+                <div id="morning-adhkar" class="adhkar-content active"></div>
+                <div id="evening-adhkar" class="adhkar-content"></div>
+                <div id="prayer-adhkar" class="adhkar-content"></div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 مخطط قراءة القرآن الكريم</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
